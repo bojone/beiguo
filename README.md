@@ -16,6 +16,12 @@ python beiguo.py <pid>
 
 输出：`<container_id>: <container_names>`或`找不到对应的container`。
 
+为了方便使用，建议在`~/.bashrc`加一句：
+```bash
+alias beiguo='python <path_to_beiguo>/beiguo.py'
+```
+然后就可以直接`beiguo <pid>`了。
+
 ## 交流
 
 QQ交流群：808623966，微信群请加机器人微信号spaces_ac_cn

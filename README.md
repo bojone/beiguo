@@ -10,7 +10,7 @@
 
 ## 使用
 
-```python
+```bash
 python beiguo.py <pid>
 ```
 

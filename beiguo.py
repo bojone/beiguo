@@ -15,5 +15,5 @@ for docker in dockers:
 if container_id is None:
     print(u'找不到对应的container')
 else:
-    commandline = 'docker ps -a --format \'{{.ID}}: {{.Names}}\' --filter id=\'%s\''
+    commandline = 'docker ps -a --format "{{.ID}}: {{.Names}}" --filter id="%s"'
     os.system(commandline % container_id)

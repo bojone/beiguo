@@ -24,7 +24,7 @@ alias beiguo='python <path_to_beiguo>/beiguo.py'
 
 ## 其他
 
-[find_container.sh](https://github.com/bojone/beiguo/blob/main/find_container.sh)是网友[@BorisPolonsky](https://github.com/BorisPolonsky)贡献的纯bash版本，用法类似，也欢迎尝试。
+[beiguo.sh](https://github.com/bojone/beiguo/blob/main/beiguo.sh)是网友[@BorisPolonsky](https://github.com/BorisPolonsky)贡献的纯bash版本，用法类似，也欢迎尝试。
 
 ## 交流
 

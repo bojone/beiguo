@@ -22,6 +22,10 @@ alias beiguo='python <path_to_beiguo>/beiguo.py'
 ```
 然后就可以直接`beiguo <pid>`了。
 
+## 其他
+
+[find_container.sh](https://github.com/bojone/beiguo/blob/main/find_container.sh)是网友[@BorisPolonsky](https://github.com/BorisPolonsky)贡献的纯bash版本，用法类似，也欢迎尝试。
+
 ## 交流
 
 QQ交流群：808623966，微信群请加机器人微信号spaces_ac_cn

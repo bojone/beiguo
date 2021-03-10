@@ -5,17 +5,15 @@ import glob, os, sys
 
 pid = sys.argv[1]
 dockers = glob.glob('/sys/fs/cgroup/memory/docker/*/cgroup.procs')
-is_found = False
+container_id = None
 
 for docker in dockers:
     if pid in open(docker).read().strip().split('\n'):
-        is_found = True
-        container_id = docker.replace('/sys/fs/cgroup/memory/docker/', '')
-        container_id = container_id.replace('/cgroup.procs', '')
+        container_id = docker[29:-13]
         break
 
-if is_found:
-    commandline = 'docker ps --format \'{{.ID}}: {{.Names}}\' | grep %s'
-    os.system(commandline % container_id[:12])
-else:
+if container_id is None:
     print(u'找不到对应的container')
+else:
+    commandline = 'docker ps -a --format \'{{.ID}}: {{.Names}}\' --filter id=\'%s\''
+    os.system(commandline % container_id)

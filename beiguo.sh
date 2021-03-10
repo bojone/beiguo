@@ -12,6 +12,6 @@ do
     if [ $(grep -E "^${PID}\$" "$FILE_PATH") ]
     then
         CONTAINER_ID=`echo "$FILE_PATH" | sed -n "s/.*\/\([a-z0-9]\+\)\/cgroup.procs$/\1/p"`
-        docker ps -a --format '{{.ID}}: {{.Names}}' --filter id="${CONTAINER_ID}"
+        docker ps -a --format "{{.ID}}: {{.Names}}" --filter id="${CONTAINER_ID}"
     fi
 done

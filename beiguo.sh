@@ -2,7 +2,7 @@
 
 if [ $# -ne 1 ]
 then
-    echo "Usage: find_container.sh PID"
+    echo "Usage: beiguo.sh PID"
     exit -1
 fi
 
